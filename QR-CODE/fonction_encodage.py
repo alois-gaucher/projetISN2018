@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 #Author: DRISSI Rayan, GAUCHER Aloïs
 
-def convertisseur_dec_bin(nombre):
+def convertisseur(nombre):
 	if nombre == 0:
-		resultat = 0
-	resultat = ''
+		resultat = '0'
 	else:
-    	while nombre!=0:
-        	quotient=nombre//2
-        	reste=nombre%2
-        	resultat += str(reste)
-        	nombre=quotient
+	    while nombre!=0:
+        a = nombre//2
+        reste = nombre%2
+        resultat += str(reste)
+        nombre = a
  
 res = ''
 for i in range(len(resultat)-1, -1, -1):
@@ -27,5 +26,5 @@ def encodage():
 		print liste
 
 
-encodage()
+convertisseur()
 put = input()
